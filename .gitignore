@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+ENV/
+
+# Models
+*.pkl
+*.h5
+models/*
+!models/.gitkeep
+
+# Data
+*.csv
+data/*
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/

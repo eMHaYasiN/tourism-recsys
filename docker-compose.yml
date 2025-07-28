@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  recsys-api:
+    build: .
+    ports:
+      - "80:8000"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - MODEL_PATH=/app/models
+      - DATA_PATH=/app/data
+      - LOG_LEVEL=INFO
+    restart: unless-stopped

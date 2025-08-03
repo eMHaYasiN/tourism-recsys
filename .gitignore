@@ -8,6 +8,8 @@ env/
 venv/
 .venv/
 ENV/
+# Testing
+.pytest_cache/
 
 # ML Models  
 *.pkl
